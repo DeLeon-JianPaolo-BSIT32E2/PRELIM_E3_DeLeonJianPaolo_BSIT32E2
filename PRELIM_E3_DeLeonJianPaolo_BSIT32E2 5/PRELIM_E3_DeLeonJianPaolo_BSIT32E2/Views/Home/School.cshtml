@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "School Schedule";
+}
+
+<style>
+    body {
+        background: url("school.jpg") center/cover no-repeat;
+    }
+
+    .sched {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        color: black;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .photo {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    body::after {
+        content: '\02267';
+        font-family: 'Arial', sans-serif;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        font-size: 24px;
+        color: #333;
+        cursor: pointer;
+        z-index: 1000;
+    }
+</style>
+
+<div class="sched">
+    <h1>Explore Our School Schedule for IT Elective 3 (Full Stack)</h1>
+    <img src="~/sched.png" alt="school schedule" class="photo" />
+</div>
